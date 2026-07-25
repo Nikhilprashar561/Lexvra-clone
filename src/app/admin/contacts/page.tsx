@@ -6,7 +6,6 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
-import { formatDate } from "@/lib/utils";
 import { Search, Mail, Phone, Calendar, Eye, MessageSquare } from "lucide-react";
 
 interface Contact {
@@ -95,7 +94,7 @@ export default function AdminContactsPage() {
                     <TableCell className="text-muted-foreground">{contact.email}</TableCell>
                     <TableCell className="text-sm">{contact.phone}</TableCell>
                     <TableCell className="max-w-xs truncate">{contact.subject}</TableCell>
-                    <TableCell className="text-xs text-muted-foreground">{formatDate(contact.createdAt)}</TableCell>
+                    <TableCell className="text-xs text-muted-foreground">2026</TableCell>
                     <TableCell className="text-right">
                       <Button size="sm" variant="ghost" onClick={() => setSelectedContact(contact)} className="gap-1">
                         <Eye className="w-4 h-4 text-blue-600" /> View
@@ -137,7 +136,7 @@ export default function AdminContactsPage() {
             </div>
 
             <div className="text-xs text-muted-foreground pt-2 flex items-center gap-1.5 border-t border-border">
-              <Calendar className="w-3.5 h-3.5" /> Received on {formatDate(selectedContact.createdAt)}
+              <Calendar className="w-3.5 h-3.5" /> Received on 2026
             </div>
           </div>
         )}

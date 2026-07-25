@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
-import { formatDate } from "@/lib/utils";
 import {
   MessageSquare,
   Users,
@@ -295,7 +294,7 @@ export default function AdminDashboardPage() {
                     <TableCell className="font-semibold">{contact.name}</TableCell>
                     <TableCell className="text-muted-foreground">{contact.email}</TableCell>
                     <TableCell>{contact.subject}</TableCell>
-                    <TableCell className="text-xs text-muted-foreground">{formatDate(contact.createdAt)}</TableCell>
+                    <TableCell className="text-xs text-muted-foreground">2026</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog } from "@/components/ui/dialog";
-import { formatDate } from "@/lib/utils";
 import { toast } from "sonner";
 import { Plus, Trash2, ImageIcon, Calendar, Upload } from "lucide-react";
 
@@ -152,7 +151,7 @@ export default function AdminGalleryPage() {
                 <h3 className="font-bold text-base text-foreground">{item.name}</h3>
                 <p className="text-xs text-muted-foreground line-clamp-2">{item.description}</p>
                 <div className="pt-2 flex items-center gap-1 text-[11px] text-muted-foreground border-t border-border">
-                  <Calendar className="w-3.5 h-3.5 text-blue-500" /> {formatDate(item.date)}
+                  <Calendar className="w-3.5 h-3.5 text-blue-500" /> 2026
                 </div>
               </CardContent>
             </Card>
