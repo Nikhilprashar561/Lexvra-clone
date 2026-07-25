@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Dialog } from "@/components/ui/dialog";
+import { formatDate } from "@/lib/utils";
 import { Search, Eye, FileText, ExternalLink, Briefcase, MapPin, Clock } from "lucide-react";
 
 interface Application {
@@ -104,7 +105,7 @@ export default function AdminApplicationsPage() {
                     <TableCell className="font-medium">{app.currentJobTitle}</TableCell>
                     <TableCell className="text-sm">{app.experience}</TableCell>
                     <TableCell><Badge variant="secondary">{app.noticePeriod}</Badge></TableCell>
-                    <TableCell className="text-xs text-muted-foreground">2026</TableCell>
+                    <TableCell className="text-xs text-muted-foreground">{formatDate(app.createdAt)}</TableCell>
                     <TableCell className="text-right">
                       <Button size="sm" variant="ghost" onClick={() => setSelectedApp(app)} className="gap-1">
                         <Eye className="w-4 h-4 text-blue-600" /> Review
@@ -183,7 +184,7 @@ export default function AdminApplicationsPage() {
                   <FileText className="w-4 h-4" /> Download / Open Resume
                 </Button>
               </a>
-              <span className="text-xs text-muted-foreground">Applied 2026</span>
+              <span className="text-xs text-muted-foreground">Applied {formatDate(selectedApp.createdAt)}</span>
             </div>
           </div>
         )}

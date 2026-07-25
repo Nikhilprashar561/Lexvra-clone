@@ -189,7 +189,7 @@ export default function CareersPage() {
           Join Our Team
         </Badge>
         <h1 className="fade-up fade-up-1 text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 dark:text-white">
-          Build Great Products With <span className="gradient-text">AuraAgency</span>
+          Build Great Products With <span className="gradient-text">Lexvra InFinology Pvt ltd.</span>
         </h1>
         <p className="fade-up fade-up-2 text-lg text-muted-foreground leading-relaxed">
           Explore current career openings and become part of our engineering and design team.

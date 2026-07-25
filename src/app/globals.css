@@ -79,9 +79,7 @@
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
   }
-  * {
-    @apply border-border outline-ring/50;
-  }
+
   body {
     @apply bg-background text-foreground;
   }

@@ -95,7 +95,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </div>
           <div>
             <h2 className="font-bold text-sm leading-tight">Admin Console</h2>
-            <p className="text-xs text-muted-foreground">AuraAgency Portal</p>
+            <p className="text-xs text-muted-foreground">Lexvra InFinology Portal</p>
           </div>
         </div>
 

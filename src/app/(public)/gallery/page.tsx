@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog } from "@/components/ui/dialog";
-// import { formatDate } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 import { ImageIcon, Calendar, Sparkles, Eye } from "lucide-react";
 
 interface GalleryItem {
@@ -182,7 +182,7 @@ export default function GalleryPage() {
               {selectedItem.description}
             </p>
             <div className="flex items-center gap-2 text-xs text-muted-foreground pt-2 border-t border-border">
-              <Calendar className="w-4 h-4 text-zinc-900 dark:text-zinc-100" /> Published on 2026
+              <Calendar className="w-4 h-4 text-zinc-900 dark:text-zinc-100" /> Published on {formatDate(selectedItem.date)}
             </div>
           </div>
         )}

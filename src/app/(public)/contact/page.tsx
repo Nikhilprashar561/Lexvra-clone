@@ -208,8 +208,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-sm">Email Us</h4>
-                  <p className="text-sm text-muted-foreground">hello@auraagency.com</p>
-                  <p className="text-sm text-muted-foreground">support@auraagency.com</p>
+                  <p className="text-sm text-muted-foreground">hello@lexvrainfinology.com</p>
+                  <p className="text-sm text-muted-foreground">support@lexvrainfinology.com</p>
                 </div>
               </div>
 

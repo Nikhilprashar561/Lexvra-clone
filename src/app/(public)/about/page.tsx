@@ -62,7 +62,7 @@ export default function AboutPage() {
           variant="outline"
           className="fade-up px-3 py-1 border-zinc-300 text-zinc-900 dark:border-zinc-700 dark:text-zinc-100"
         >
-          About AuraAgency
+          About Lexvra InFinology
         </Badge>
         <h1 className="fade-up fade-up-1 text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 dark:text-white">
           Crafting the Future of <span className="gradient-text">Web & Software</span>
